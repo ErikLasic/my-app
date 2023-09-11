@@ -1,0 +1,4 @@
+<div class="places--container">
+    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+    <app-places-list [searchText]="searchText"></app-places-list>
+</div>

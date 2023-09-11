@@ -1,0 +1,16 @@
+<mat-card *ngIf="place" [ngClass]="{'expanded': isExpanded}" class="place-card">
+    <div class="place-image-container">
+        <img [src]="place.imageURL" alt="Place Image" class="place-image">
+    </div>
+    <mat-card-content>
+        <h2 class="place-name">{{ place.name }}</h2>
+        <div class="bold-text">Description:</div>
+        <div *ngIf="isExpanded; else shortDescription" class="description-content">{{ place.description }}</div>
+        <ng-template #shortDescription>{{ place.description | slice:0:100 }}...</ng-template>
+        <div class="expand-toggle" (click)="toggleDescription()">
+            <mat-icon>{{ isExpanded ? 'remove' : 'add' }}</mat-icon>
+        </div>
+        <div class="bold-text">Contact:</div>
+        <p class="brand-content">{{ place.contact }}</p>
+    </mat-card-content>
+</mat-card>

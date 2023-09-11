@@ -1,0 +1,49 @@
+.place-card {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.place-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.place-image {
+    max-width: 100%;
+    width: 500px;
+    border: 2px solid grey;
+}
+
+.place-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.description-content {
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.expand-toggle {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.expand-toggle mat-icon {
+    vertical-align: middle;
+    font-size: 24px;
+}

@@ -1,0 +1,19 @@
+.mat-toolbar.mat-primary {
+    background: #007bff;
+    color: #fff;
+    height: 8vh;
+  }
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.buttons {
+    background-color: #522eb6;
+    margin-left: 18px;
+    color: #eeebeb;
+}
+
+.span--class:hover {
+    transform: scale(1.05);
+}

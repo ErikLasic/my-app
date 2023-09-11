@@ -1,0 +1,7 @@
+<div class="places--container">
+    <ng-container *ngFor="let place of places">
+        <a (click)="onPlaceClick(place)">
+            <app-places [place]="place" *ngIf="searchText === '' || place.name.toLowerCase().includes(searchText)"></app-places>
+        </a>
+    </ng-container>
+</div>

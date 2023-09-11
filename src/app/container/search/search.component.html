@@ -1,0 +1,10 @@
+<div class="search--place">
+    <button mat-mini-fab *ngIf="searchText" class="btn-clear" (click)="clearInput()">
+        <mat-icon>clear</mat-icon>
+    </button>
+    <input class="search-place-input" #searchInput [(ngModel)]="searchText" (keyup.enter)="updateSearchText()">
+    <button mat-raised-button class="btn-search" (click)="updateSearchText()">
+        <mat-icon>search</mat-icon>
+        Search
+    </button>
+</div>

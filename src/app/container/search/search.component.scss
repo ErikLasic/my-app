@@ -1,0 +1,25 @@
+.search--place{
+    margin: 20px auto;
+    text-align: center;
+}
+.search-place-input{
+    width: 40%;
+    height: 5.5vh;
+    padding: 1px 10px;
+    outline: none;
+    border-radius: 2px;
+    background-color: #efefef;
+    border:#28282B 1px solid;
+    font-size: large;
+}
+
+.btn-search {
+    margin-left: 1vw;
+    padding: 20px 25px;
+}
+
+.btn-clear {
+    margin-right: 1vw;
+    color: #b82323;
+    background-color: #363636;
+}

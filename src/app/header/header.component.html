@@ -1,0 +1,41 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+    <span routerLink="" class="span--class">
+        <mat-icon>map</mat-icon>
+        {{ title }}
+    </span>
+    <div class="spacer"></div>
+    <div *ngIf="windowWidth >= breakpointWidth; else dropdownMenu">
+        <a mat-fab extended class="buttons" routerLink="">
+            <mat-icon>home</mat-icon>
+            Places
+        </a>
+        <a mat-fab extended class="buttons" (click)="goToRandomPlace()">
+            <mat-icon>star</mat-icon>
+            Pick Random
+        </a>
+        <a mat-fab extended class="buttons" routerLink="about">
+            <mat-icon>help</mat-icon>
+            About Us
+        </a>
+    </div>
+    
+    <ng-template #dropdownMenu>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="">
+                <mat-icon>home</mat-icon>
+                Places
+            </button>
+            <button mat-menu-item (click)="goToRandomPlace()">
+                <mat-icon>star</mat-icon>
+                Pick Random
+            </button>
+            <button mat-menu-item routerLink="about">
+                <mat-icon>help</mat-icon>
+                About Us
+            </button>
+        </mat-menu>
+    </ng-template>
+  </mat-toolbar>
